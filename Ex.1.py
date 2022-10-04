@@ -11,8 +11,12 @@ Print out that many copies of the previous message on separate lines. (Hint: the
 
 name = input('What is your name? ')
 age = int(input('What year were you born in? '))
+num = int(input('How many times would you like the message to be repeated? '))
 
 year_100 = age+100
 
-print('Hello, ' + name + ' you will turn 100 years of age in '+ str(year_100))
+
+print(('Hello, ' + name + ' you will turn 100 years of age in '+ str(year_100)+'\n')*num)
+
+
 
