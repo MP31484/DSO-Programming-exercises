@@ -6,4 +6,8 @@ Create a program that asks the user for a number and then prints out a list of a
 
 num=int(input('Give me a number: '))
 
-while
+divisors=[]
+for div_number in range(1, num + 1):
+    if num % div_number ==0:
+        divisors.append(div_number)
+print(divisors)
